@@ -5,7 +5,7 @@ import { BalanceSheetService } from './balance-sheet.service';
 export class BalanceSheetController {
   constructor(private readonly balanceSheetService: BalanceSheetService) {}
   @Get()
-  getBalanceSheet() {
+  async getBalanceSheet() {
     return this.balanceSheetService.getBalanceSheet();
   }
 }
